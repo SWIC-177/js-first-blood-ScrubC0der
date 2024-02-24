@@ -6,3 +6,6 @@ function greet(name) {
 // Call the function 
 var name = "your name";
 var greeting = greet(yourName);
+
+// Log console
+console.log(greeting)
