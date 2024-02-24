@@ -4,7 +4,7 @@ function greet(name) {
 }
 
 // Call the function 
-var name = "your name";
+var yourName = "your name";
 var greeting = greet(yourName);
 
 // Log console
