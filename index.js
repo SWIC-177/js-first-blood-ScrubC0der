@@ -1,5 +1,5 @@
 // Define a function that greets the name
-function greet(name) {
+const greet = (name) => {
     return `Goooood morning, ${name}! Have a good day.`;
 }
 
