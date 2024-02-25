@@ -1,11 +1,10 @@
 // Define a function that greets the name
 function greet(name) {
-    return "Hello," + name;
+    return `Goooood morning, ${name}! Have a good day.`;
 }
 
 // Call the function 
-var yourName = "your name";
-var greeting = greet(yourName);
+const userName = "Ben";
 
 // Log console
-console.log(greeting)
+console.log(greet(userName));
