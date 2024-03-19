@@ -1,10 +1,15 @@
-// Define a function that greets the name
-const greet = (name) => {
-    return `Goooood morning, ${name}! Have a good day.`;
+//Declare variable name
+var name = "Kelan"
+
+//Declare variable age
+var age = 21
+
+//Write verifyAdulthood function 
+function verifyAdulthood(age, name) {
+    if (age >=18) {
+        return `Welcome, ${name}!`
+    } else {
+        return `You are not old enough to enter, ${name}`
+    }
 }
-
-// Call the function 
-const userName = "Ben";
-
-// Log console
-console.log(greet(userName));
+console.log(verifyAdulthood(age,name))
