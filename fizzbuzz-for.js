@@ -1,4 +1,4 @@
-// Using for
+// Using for loop
 for (let i = 0; i <= 100; i += 1) {
   if (i % 3 == 0 && i % 5 == 0) {
     console.log("FizzBuzz");

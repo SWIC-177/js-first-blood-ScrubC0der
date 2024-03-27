@@ -1,4 +1,4 @@
-//Using while
+//Using while loop
 let i = 0;
 
 while (i <= 100) {
