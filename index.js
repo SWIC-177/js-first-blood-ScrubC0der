@@ -1,34 +1,34 @@
-const people = [
-  {
-    name: "John",
-    age: 17,
-  },
-  {
-    name: "Jane",
-    age: 20,
-  },
-  {
-    name: "Mary",
-    age: 25,
-  },
-  {
-    name: "Peter",
-    age: 30,
-  },
-  {
-    name: "Paul",
-    age: 35,
-  },
-];
+// --Arrow function--
 
-function verifyAdulthood(personName, personAge) {
-  if (personAge >= 18) return `Welcome, ${personName}!`;
-
-  return `You are not old enough to enter, ${personName}.`;
+function add(a, b) {
+  return a + b;
 }
 
-for (let i = 0; i < people.length; i++) {
-  const person = people[i];
-  const message = verifyAdulthood(person.name, person.age);
-  console.log(message);
+console.log(add(2, 3)); // Output: 5
+
+const addArrow = (a, b) => a + b;
+
+console.log(addArrow(2, 3)); // Output: 5
+
+// --Closure--
+function createDivision(factor) {
+  return (number) => number / factor;
 }
+
+const double = createDivision(2);
+console.log(double(4));
+console.log(double(12));
+// Callbacks
+function fetchData(callback) {
+  setTimeout(() => {
+    const data = { message: "Data fetched successfully!" };
+    callback(data);
+  }, 2000);
+}
+
+// Callback function
+function processData(data) {
+  console.log(data.message);
+}
+
+fetchData(processData);
