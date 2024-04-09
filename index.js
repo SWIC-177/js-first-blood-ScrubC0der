@@ -1,34 +1,15 @@
-// --Arrow function--
+const person = {
+  name: "John Doe",
+  age: 23,
+  street: "123 Main St",
+};
 
-function add(a, b) {
-  return a + b;
+function updatePersonName(p, newName) {
+  const p2Update = { ...p };
+
+  p2Update.name = newName;
+  return p;
 }
 
-console.log(add(2, 3)); // Output: 5
-
-const addArrow = (a, b) => a + b;
-
-console.log(addArrow(2, 3)); // Output: 5
-
-// --Closure--
-function createDivision(factor) {
-  return (number) => number / factor;
-}
-
-const double = createDivision(2);
-console.log(double(4));
-console.log(double(12));
-// Callbacks
-function fetchData(callback) {
-  setTimeout(() => {
-    const data = { message: "Data fetched successfully!" };
-    callback(data);
-  }, 2000);
-}
-
-// Callback function
-function processData(data) {
-  console.log(data.message);
-}
-
-fetchData(processData);
+const updatedPerson = updatePersonName(person, "Jane Doe");
+console.log(updatedPerson);
